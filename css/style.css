@@ -1,0 +1,28 @@
+/* SET BACKGROUND IMAGE */
+body {
+    background-image: url("../images/connectwork.png");
+}
+
+/* SET H1 TAG */
+h1 {
+    color:rgb(63, 63, 63);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* TEXT ALIGN P IN FOOTER TO BE CENTER */
+footer p {
+    text-align: center;
+}
+
+/* SET ABOUT ME IMAGE ID TO FLAOT LEFT AND ADD MARGIN */
+#about-me-img {
+    float: left;
+    margin-right: 3%;
+}
+
+/* CENTER PORTFOLIO IMAGES */
+.portfolio-display {
+    text-align: center;
+}
+
