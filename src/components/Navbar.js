@@ -1,25 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
+import { Nav, Container, Button } from 'react-bootstrap';
 
 function Navbar() {
+  let [ location, setLocation ] = useState(
+    {currentPath:window.location.pathname})
+
+  useEffect(() => {
+      console.log(location)
+      setLocation({currentPath:window.location.pathname})
+  },[]);
+
   return (
-  <header className="container-md mb-5">
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a className="navbar-brand pl-5" href="index.html">
+  <Container className="container-md mb-5">
+    <Nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <Link className="navbar-brand pl-5" to="/">
         <h1>Steve Rodriguez</h1>
-      </a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      </Link>
+      <Button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
-      </button>
+      </Button>
       <div className="collapse navbar-collapse justify-content-end pr-5" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-          <a className="nav-item nav-link active" href="/">Home</a>
-          <a className="nav-item nav-link" href="portfolio">Portfolio</a>
-          <a className="nav-item nav-link" href="contact">Contact</a>
+          <Link className={
+                window.location.pathname === '/' ||
+                window.location.pathname === '/about'
+                  ? 'nav-item nav-link active'
+                  : 'nav-item nav-link'
+              } to="/">Home</Link>
+          <Link className={
+                window.location.pathname === '/portfolio'
+                  ? 'nav-item nav-link active'
+                  : 'nav-item nav-link'
+              } to="/portfolio">Portfolio</Link>
+          <Link className={
+                window.location.pathname === '/contact'
+                  ? 'nav-item nav-link active'
+                  : 'nav-item nav-link'
+              } to="/contact">Contact</Link>
           <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Social
-            </a>
+            </Link>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="https://www.linkedin.com/in/steven-rodriguez-1a418784/" target="_blank"><img src="images/linkedin.svg" width="25px"/>  Linkedin</a>
               <div className="dropdown-divider"></div>
@@ -30,8 +53,8 @@ function Navbar() {
           </li>
         </div>
       </div>
-    </nav>
-  </header>
+    </Nav>
+  </Container>
 );
 };
 

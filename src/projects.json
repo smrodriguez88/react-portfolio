@@ -1,0 +1,44 @@
+[
+    {
+        "projectName": "WatchIt", 
+        "deployedUrl": "https://smrodriguez88.github.io/WatchIt/",
+        "githubUrl": "https://github.com/smrodriguez88/WatchIt",
+        "imageUrl": "images/project1-screenshot.png",
+        "description": "Find which streaming services you can watch your favorite movies and TV shows on at the touch of a button."
+    },
+    {
+        "projectName": "Parks n Req", 
+        "deployedUrl": "https://salty-hamlet-73070.herokuapp.com",
+        "githubUrl": "https://github.com/smrodriguez88/Parks_n_Req",
+        "imageUrl": "images/project2-screenshot.png",
+        "description": "A re-imgaging of the Texas State Parks campsite reservation system."
+    },
+    {
+        "projectName": "Burger Me", 
+        "deployedUrl": "https://protected-hamlet-58022.herokuapp.com/",
+        "githubUrl": "https://github.com/smrodriguez88/13-burger-logger",
+        "imageUrl": "images/project3-screenshot.png",
+        "description": "An application which allows you to devour a burger of your choosing. Yum!"
+    },
+    {
+        "projectName": "User Directory", 
+        "deployedUrl": "https://smrodriguez88.github.io/19-User-Directory/",
+        "githubUrl": "https://smrodriguez88.github.io/19-User-Directory/",
+        "imageUrl": "images/project4-screenshot.png",
+        "description": "An application which takes in user information and allows for easy display, sorting, and filtering."
+    },
+    {
+        "projectName": "Workout Tracker", 
+        "deployedUrl": "https://fierce-refuge-73074.herokuapp.com/",
+        "githubUrl": "https://github.com/smrodriguez88/17-workout-tracker",
+        "imageUrl": "images/project5-screenshot.png",
+        "description": "A workout logging and graphing application that allows you to visualize your workout routine."
+    },
+    {
+        "projectName": "Weather Dashboard", 
+        "deployedUrl": "https://smrodriguez88.github.io/06-Weather-Dashboard",
+        "githubUrl": "https://github.com/smrodriguez88/06-Weather-Dashboard",
+        "imageUrl": "images/project6-screenshot.png",
+        "description": "A weather dashboard which allows the user to view daily and 5-day forecast information based on the location requested."
+    }
+]
